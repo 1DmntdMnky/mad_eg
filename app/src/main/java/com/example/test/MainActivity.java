@@ -2,6 +2,7 @@ package com.example.test;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -25,5 +26,9 @@ EditText ed1, ed2;
             Toast toast=Toast.makeText(getApplicationContext(),"length>100cm",Toast.LENGTH_SHORT);
             toast.show();
         }
+    }
+    public void newpage(View v){
+        Intent i=new Intent(this,MainActivity2.class);
+        startActivity(i);
     }
 }
